@@ -3,7 +3,7 @@ import {ExtensionType, Section, List, Paragraph, Title} from "./Statistics.style
 export const Statistics = ({ title, stats }) => {
   return (
     <Section className="statistics">
-      <Title className="title">{title}</Title>
+      {title && <Title className="title">{title}</Title>}
 
       <List>
         {stats.map(stat => (
